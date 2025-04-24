@@ -1,9 +1,9 @@
-# Resume Sage MVP 🚀
+# Resume Sage AI
 
 **AI-powered resumes that tell your story**  
 *Zero friction. GDPR-compliant. Upsell-ready.*
 
-👉 [Live Demo](https://resume-sage-mvp.vercel.app)  
+👉 [[Live Demo](https://resume-sage-ai.vercel.app))  
 📹 [Demo Video](https://loom.com/share/...) *(Coming soon)*
 
 ---
@@ -37,4 +37,4 @@
 ## 🚀 Quick Start  
 1. **Clone repo**:  
    ```bash  
-   git clone https://github.com/ibrillianz/resume-sage-mvp.git  
+   git clone https://github.com/ibrillianz/resume-sage-ai.git  
