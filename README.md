@@ -10,7 +10,7 @@ All in one click — based on simple personal inputs.
 
 ### 💡 About This Project
 
-This MVP was built for the **[insert Hackathon Name]** with a focus on:
+This MVP was built for the **Asha AI Hackathon 2025** with a focus on:
 - Fast, clean UX
 - Prompt-driven resume building
 - Basic cold outreach messaging
