@@ -1,46 +1,40 @@
-# Resume Sage – MVP
+# Resume Sage MVP 🚀
 
-🚀 A smart AI resume generator built for the Asha AI Hackathon 2025.  
-This MVP builds resumes, cover letters, and cold emails using adaptive prompts and OpenAI.
+**AI-powered resumes that tell your story**  
+*Zero friction. GDPR-compliant. Upsell-ready.*
 
-## 🔧 Features
+👉 [Live Demo](https://resume-sage-mvp.vercel.app)  
+📹 [Demo Video](https://loom.com/share/...) *(Coming soon)*
 
-- Resume summary builder
-- Cover letter generator (based on JD)
-- Cold email output (1 version)
-- Remote company fallback recommender
-- No login required
-- Email + screen output
+---
 
-## 🛠️ Tech Stack
+## ✨ Features  
+- **Free Tier**:  
+  - 60-second resume generator (role + strength → 4 bullet points)  
+  - GDPR-compliant (no data stored)  
+  - Embedded upsell hooks to Basic/Premium  
 
-| Layer | Tool |
-|-------|------|
-| Frontend | HTML, CSS, JavaScript |
-| AI Engine | OpenAI GPT-4 (API key) |
-| Output | Screen + Email (via Make.com or simulated) |
-| Hosting | GitHub Pages (MVP) |
-| Future | Vercel + Replit + Airtable (v1.5)
+- **Basic Tier (Coming Soon)**:  
+  - JD-tailored resumes + 50 vetted company suggestions  
+  - Weakness → Strength reframing  
 
-## 🧠 What’s Held Back (IP Protection)
+- **Premium Tier (Roadmap)**:  
+  - Discovery Mode ("Find your dream role")  
+  - 1-click LinkedIn DM drafts  
 
-This repo only shows the MVP logic:
-✅ Bot flow, core form structure, sample logic.
+---
 
-❌ Career clarity engine  
-❌ JD match analysis  
-❌ Full org database  
-❌ Advanced tone templates  
-❌ Data memory & personalization logic  
-❌ Secure email API setup (hidden)
+## 🛠️ Tech Stack  
+| Layer               | Tool                  | Why?                          |  
+|---------------------|-----------------------|-------------------------------|  
+| **Frontend**        | HTML + Tailwind CSS   | Lightning-fast, zero JS fatigue |  
+| **Backend**         | Vercel Serverless     | Hide API keys, auto-scaling   |  
+| **AI**              | OpenAI GPT-3.5        | Cost-effective for MVP        |  
+| **Auth**            | Email magic links     | No passwords, GDPR-safe       |  
 
-## ⚠️ License
+---
 
-MIT License for educational demo use only.  
-Commercial reuse or clones not permitted without permission.
-
-© 2025 iBrillianz Tech Studio
-
-## 📎 Live Preview
-
-[https://ibrillianz.github.io/resume-sage-mvp](https://ibrillianz.github.io/resume-sage-mvp)
+## 🚀 Quick Start  
+1. **Clone repo**:  
+   ```bash  
+   git clone https://github.com/ibrillianz/resume-sage-mvp.git  
