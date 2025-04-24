@@ -1,38 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume Sage MVP</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Resume Sage 🧠</h1>
-    <p>Enter your details below to generate your resume pack:</p>
-    
-    <form id="resumeForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required />
-
-      <label for="dreamJob">Dream Job:</label>
-      <input type="text" id="dreamJob" required />
-
-      <label for="strengths">Strengths:</label>
-      <textarea id="strengths" rows="2" required></textarea>
-
-      <label for="weaknesses">Weaknesses:</label>
-      <textarea id="weaknesses" rows="2"></textarea>
-
-      <label for="jd">Paste Job Description:</label>
-      <textarea id="jd" rows="6" required></textarea>
-
-      <button type="submit">Generate Resume Pack</button>
-    </form>
-
-    <div id="output"></div>
+<body class="bg-gray-50">
+  <div class="max-w-2xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-blue-600 mb-6">Resume Sage</h1>
+    <div id="chat-output" class="mb-4"></div>
+    <input id="user-input" placeholder="What's your target role?" class="border p-2 w-full mb-2">
+    <button onclick="generateResume()" class="bg-blue-600 text-white px-4 py-2 rounded">Generate</button>
+    <div id="resume-output" class="mt-6 p-4 border"></div>
   </div>
-
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
