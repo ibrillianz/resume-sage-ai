@@ -3,34 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume Sage AI</title>
+  <title>Resume Sage MVP</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Resume Sage</h1>
-    <p><em>Your AI assistant for creating tailored resumes, cover letters, and cold emails.</em></p>
-
+    <h1>Resume Sage 🧠</h1>
+    <p>Enter your details below to generate your resume pack:</p>
+    
     <form id="resumeForm">
-      <label for="name">Your Name</label>
+      <label for="name">Name:</label>
       <input type="text" id="name" required />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" required />
+      <label for="dreamJob">Dream Job:</label>
+      <input type="text" id="dreamJob" required />
 
-      <label for="jd">Paste Job Description</label>
-      <textarea id="jd" rows="4" required></textarea>
+      <label for="strengths">Strengths:</label>
+      <textarea id="strengths" rows="2" required></textarea>
 
-      <label for="strengths">Your Strengths</label>
-      <input type="text" id="strengths" />
+      <label for="weaknesses">Weaknesses:</label>
+      <textarea id="weaknesses" rows="2"></textarea>
 
-      <label for="dream">Dream Job</label>
-      <input type="text" id="dream" />
+      <label for="jd">Paste Job Description:</label>
+      <textarea id="jd" rows="6" required></textarea>
 
-      <label for="weaknesses">Weaknesses (optional)</label>
-      <input type="text" id="weaknesses" />
-
-      <button type="submit">Generate My Resume Pack</button>
+      <button type="submit">Generate Resume Pack</button>
     </form>
 
     <div id="output"></div>
