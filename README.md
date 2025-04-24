@@ -1,66 +1,46 @@
-# 🚀 Resume Sage MVP
+# Resume Sage – MVP
 
-👩‍💻 A smart, AI-powered tool to help users generate:
-- ✅ Tailored Resumes
-- ✅ Custom Cover Letters
-- ✅ Cold Outreach Emails  
-All in one click — based on simple personal inputs.
+🚀 A smart AI resume generator built for the Asha AI Hackathon 2025.  
+This MVP builds resumes, cover letters, and cold emails using adaptive prompts and OpenAI.
 
----
+## 🔧 Features
 
-### 💡 About This Project
+- Resume summary builder
+- Cover letter generator (based on JD)
+- Cold email output (1 version)
+- Remote company fallback recommender
+- No login required
+- Email + screen output
 
-This MVP was built for the **Asha AI Hackathon 2025** with a focus on:
-- Fast, clean UX
-- Prompt-driven resume building
-- Basic cold outreach messaging
-- Lightweight, mobile-friendly frontend
+## 🛠️ Tech Stack
 
----
-
-### 🎯 Key Features
-- 🎓 Auto-generated resume from basic user input
-- 💌 Cover letter tailored to a role or job description
-- 📬 Cold email generator to stand out to recruiters
-- 🧠 Optional fields for deeper personalization
-
----
-
-### ⚙️ Tech Stack
 | Layer | Tool |
 |-------|------|
-| 💬 Bot Logic | JavaScript + HTML |
-| 🎨 UI | CSS (light, responsive) |
-| ✨ AI Engine | OpenAI (GPT API, optional in full version) |
-| 📩 Delivery | Email output (Make / manual trigger) |
-| ☁️ Hosting | Vercel (planned) |
-| 📊 Analytics | TBD (optional for Pro) |
+| Frontend | HTML, CSS, JavaScript |
+| AI Engine | OpenAI GPT-4 (API key) |
+| Output | Screen + Email (via Make.com or simulated) |
+| Hosting | GitHub Pages (MVP) |
+| Future | Vercel + Replit + Airtable (v1.5)
 
----
+## 🧠 What’s Held Back (IP Protection)
 
-### 📌 For Hackathon MVP:
-- No user login or database (privacy first!)
-- Simple static frontend
-- Email-only output for now
+This repo only shows the MVP logic:
+✅ Bot flow, core form structure, sample logic.
 
----
+❌ Career clarity engine  
+❌ JD match analysis  
+❌ Full org database  
+❌ Advanced tone templates  
+❌ Data memory & personalization logic  
+❌ Secure email API setup (hidden)
 
-### 🛠 Coming Soon in Resume Sage Pro:
-- JD Parser + Resume Match %
-- Career clarity mode (discovery questions)
-- Cold email tone tuning
-- Multi-company job tracking
+## ⚠️ License
 
----
+MIT License for educational demo use only.  
+Commercial reuse or clones not permitted without permission.
 
-### 🤝 Team & Credits
+© 2025 iBrillianz Tech Studio
 
-Built by:  
-**Mini Bhattacharya**  
-[ibrillianz.com](https://ibrillianz.com) | [GitHub](https://github.com/ibrillianz) | [Notion Workspace / Portfolio](#)
+## 📎 Live Preview
 
-Design, Dev & UX — all crafted under iBrillianz Tech Studio 💡
-
----
-
-_© 2025 Resume Sage | Built for Hackathons, Loved by Jobseekers_
+[https://ibrillianz.github.io/resume-sage-mvp](https://ibrillianz.github.io/resume-sage-mvp)
