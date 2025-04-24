@@ -1,20 +1,28 @@
-document.getElementById("resumeForm").addEventListener("submit", function(e) {
+document.getElementById('resumeForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  const name = this.name.value;
-  const email = this.email.value;
-  const jd = this.jd.value;
-  const strengths = this.strengths.value;
-  const dream = this.dream.value;
-  const weaknesses = this.weaknesses.value;
 
-  const summary = `
-    <h2>Resume Pack</h2>
-    <p><strong>Name:</strong> ${name}</p>
-    <p><strong>Dream Job:</strong> ${dream}</p>
-    <p><strong>Strengths:</strong> ${strengths}</p>
-    <p><strong>Weaknesses:</strong> ${weaknesses}</p>
-    <p><strong>Based on Job Description:</strong><br>${jd}</p>
-    <p><em>Output will be emailed (simulated in this MVP).</em></p>
+  const name = document.getElementById('name').value.trim();
+  const dreamJob = document.getElementById('dreamJob').value.trim();
+  const strengths = document.getElementById('strengths').value.trim();
+  const weaknesses = document.getElementById('weaknesses').value.trim();
+  const jd = document.getElementById('jd').value.trim();
+
+  const output = `
+  Resume Pack
+
+  Name: ${name}
+
+  Dream Job: ${dreamJob}
+
+  Strengths: ${strengths}
+
+  Weaknesses: ${weaknesses || "Not shared"}
+
+  Based on Job Description:
+  ${jd}
+
+  ➡️ Output will be emailed (simulated in this MVP).
   `;
-  document.getElementById("output").innerHTML = summary;
+
+  document.getElementById('output').innerText = output;
 });
