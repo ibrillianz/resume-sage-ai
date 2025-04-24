@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Sage AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Sage</h1>
+    <p><em>Your AI assistant for creating tailored resumes, cover letters, and cold emails.</em></p>
+
+    <form id="resumeForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="jd">Paste Job Description</label>
+      <textarea id="jd" rows="4" required></textarea>
+
+      <label for="strengths">Your Strengths</label>
+      <input type="text" id="strengths" />
+
+      <label for="dream">Dream Job</label>
+      <input type="text" id="dream" />
+
+      <label for="weaknesses">Weaknesses (optional)</label>
+      <input type="text" id="weaknesses" />
+
+      <button type="submit">Generate My Resume Pack</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
