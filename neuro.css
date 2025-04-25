@@ -1,3 +1,8 @@
+/* Dyslexia Font */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://your-username.github.io/resume-sage-ai/assets/fonts/OpenDyslexic-Regular.woff2') format('woff2');
+}
 /* neuro.css */
 body {
   font-family: 'Inter', sans-serif;
