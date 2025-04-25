@@ -1,7 +1,16 @@
-mkdir -p .githooks && cat > .githooks/pre-commit <<'EOF'
 #!/bin/sh
-if git diff --cached | grep -E "neurodivergent_pattern|ikigai_map"; then
-  echo -e "\033[1;31mCOMMIT REJECTED: Contains proprietary algorithms\033[0m"
-  exit 1
-fi
-EOF
+# ibrillianz-proprietary-v1
+protected_patterns=(
+  "neurodivergent_pattern"
+  "ikigai_map"
+  "strength_calculator"
+  "ats_optimizer"
+)
+
+for pattern in "${protected_patterns[@]}"; do
+  if git diff --cached | grep -q "$pattern"; then
+    echo -e "\033[1;31mCOMMIT BLOCKED\033[0m: Attempt to commit protected IP ($pattern)"
+    echo "Contact CTO for export authorization"
+    exit 1
+  fi
+done
