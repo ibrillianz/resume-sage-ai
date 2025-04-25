@@ -22,6 +22,10 @@
 - **Security**: GDPR-compliant data handling  
 - **AI**: Proprietary optimization engine  
 
+⚠️ **IMPORTANT**  
+These files contain proprietary code:  
+- app.js  
+- generate.js  
 ---
 
 ## 🚀 Quick Start  
