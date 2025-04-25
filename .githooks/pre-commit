@@ -1,0 +1,7 @@
+mkdir -p .githooks && cat > .githooks/pre-commit <<'EOF'
+#!/bin/sh
+if git diff --cached | grep -E "neurodivergent_pattern|ikigai_map"; then
+  echo -e "\033[1;31mCOMMIT REJECTED: Contains proprietary algorithms\033[0m"
+  exit 1
+fi
+EOF
