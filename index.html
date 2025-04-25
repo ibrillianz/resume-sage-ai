@@ -4,87 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume Sage AI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="neuro.css">
-  <style>
-    /* Temporary styles for quick implementation */
-    .hidden { display: none; }
-    button, select {
-      padding: 0.8rem;
-      margin: 0.5rem;
-      font-size: 1rem;
-      border-radius: 8px;
-    }
-    .question {
-      margin-bottom: 1.5rem;
-    }
-    textarea {
-      width: 100%;
-      min-height: 80px;
-    }
-  </style>
+  <meta name="description" content="AI-powered resume builder for neurodivergent professionals">
 </head>
 <body>
   <div class="container">
-    <!-- ENTRY POINT -->
+    <!-- Entry Section -->
     <div id="entry-section">
-      <h1>Welcome to Resume Sage</h1>
+      <header>
+        <h1>Resume Sage AI</h1>
+        <p class="subtitle">Build resumes that work with your brain</p>
+      </header>
       
       <div class="neuro-prompt">
-        <p>Optimize for your thinking style?</p>
-        <button onclick="setFlow('structured')">🏗️ Structured Steps</button>
-        <button onclick="setFlow('exploration')">🌱 Open Exploration</button>
-      </div>
-
-      <div class="work-environment">
-        <label>Preferred work setup:</label>
-        <select id="workPref">
-          <option value="remote">Remote</option>
-          <option value="hybrid">Hybrid</option>
-          <option value="office">In-Office</option>
-        </select>
+        <h2>Select your preferred thinking style:</h2>
+        <div class="flow-options">
+          <button class="flow-btn" onclick="setFlow('structured')">
+            <span class="emoji">🏗️</span>
+            <span class="label">Structured Steps</span>
+          </button>
+          <button class="flow-btn" onclick="setFlow('exploration')">
+            <span class="emoji">🌱</span>
+            <span class="label">Open Exploration</span>
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- FREE TIER FORM -->
+    <!-- Form Section -->
     <div id="free-tier-form" class="hidden">
-      <h2>Build Your Resume</h2>
+      <h2>Let's Build Your Resume</h2>
       
-      <div>
-        <label>Target Role:</label>
-        <input type="text" id="targetRole" placeholder="e.g. UX Designer">
+      <div class="form-group">
+        <label for="targetRole">Target Role:</label>
+        <input type="text" id="targetRole" placeholder="e.g. UX Designer" required>
       </div>
 
       <div id="questions-container"></div>
 
-      <button onclick="generateResume()">Generate Resume</button>
+      <button class="primary-btn" onclick="generateResume()">Generate Resume</button>
     </div>
 
-    <!-- OUTPUT -->
+    <!-- Output Section -->
     <div id="resume-output" class="hidden">
       <h2>Your AI-Generated Resume</h2>
-      <div id="resume-content"></div>
-      <div id="neuro-score-display"></div>
+      <div id="resume-content" class="resume-preview"></div>
       
-      <div class="upsell">
-        <p>Want a <strong>JD-tailored version</strong> with ATS optimization?</p>
-        <button class="upsell-btn">Upgrade to Basic</button>
+      <div class="action-buttons">
+        <button class="secondary-btn" onclick="window.print()">Print Resume</button>
+        <button class="primary-btn" onclick="startOver()">Start Over</button>
       </div>
-    </div>
-
-    <!-- TEMPORARY TEST BUTTONS -->
-    <div style="position: fixed; bottom: 20px; right: 20px;">
-      <button onclick="document.body.classList.toggle('dyslexia-mode')">Toggle Dyslexia Mode</button>
-      <button onclick="testVoiceInput()">Test Voice Input</button>
     </div>
   </div>
 
+  <!-- Accessibility Tools -->
+  <div class="accessibility-tools">
+    <button class="accessibility-btn" onclick="toggleDyslexiaMode()" aria-label="Toggle dyslexia-friendly font">DF</button>
+    <button class="accessibility-btn" onclick="testVoiceInput()" aria-label="Voice input">🎤</button>
+  </div>
+
   <script src="app.js"></script>
-  <script>
-    // Temporary test functions - remove in production
-    function testVoiceInput() {
-      alert("Voice input will be implemented in Phase 2");
-    }
-  </script>
 </body>
 </html>
