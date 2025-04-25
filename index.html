@@ -6,27 +6,85 @@
   <title>Resume Sage AI</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="neuro.css">
+  <style>
+    /* Temporary styles for quick implementation */
+    .hidden { display: none; }
+    button, select {
+      padding: 0.8rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+    }
+    .question {
+      margin-bottom: 1.5rem;
+    }
+    textarea {
+      width: 100%;
+      min-height: 80px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Entry Point -->
   <div class="container">
-    <div class="neuro-prompt">
-      <p>Optimize for your thinking style?</p>
-      <button onclick="setFlow('structured')">🏗️ Structured Steps</button>
-      <button onclick="setFlow('exploration')">🌱 Open Exploration</button>
+    <!-- ENTRY POINT -->
+    <div id="entry-section">
+      <h1>Welcome to Resume Sage</h1>
+      
+      <div class="neuro-prompt">
+        <p>Optimize for your thinking style?</p>
+        <button onclick="setFlow('structured')">🏗️ Structured Steps</button>
+        <button onclick="setFlow('exploration')">🌱 Open Exploration</button>
+      </div>
+
+      <div class="work-environment">
+        <label>Preferred work setup:</label>
+        <select id="workPref">
+          <option value="remote">Remote</option>
+          <option value="hybrid">Hybrid</option>
+          <option value="office">In-Office</option>
+        </select>
+      </div>
     </div>
 
-    <!-- Free Tier Form (Hidden Initially) -->
+    <!-- FREE TIER FORM -->
     <div id="free-tier-form" class="hidden">
       <h2>Build Your Resume</h2>
-      <div id="strength-questions"></div>
-      <button onclick="generateResume()">Generate</button>
+      
+      <div>
+        <label>Target Role:</label>
+        <input type="text" id="targetRole" placeholder="e.g. UX Designer">
+      </div>
+
+      <div id="questions-container"></div>
+
+      <button onclick="generateResume()">Generate Resume</button>
     </div>
 
-    <!-- Output -->
-    <div id="resume-output" class="hidden"></div>
+    <!-- OUTPUT -->
+    <div id="resume-output" class="hidden">
+      <h2>Your AI-Generated Resume</h2>
+      <div id="resume-content"></div>
+      <div id="neuro-score-display"></div>
+      
+      <div class="upsell">
+        <p>Want a <strong>JD-tailored version</strong> with ATS optimization?</p>
+        <button class="upsell-btn">Upgrade to Basic</button>
+      </div>
+    </div>
+
+    <!-- TEMPORARY TEST BUTTONS -->
+    <div style="position: fixed; bottom: 20px; right: 20px;">
+      <button onclick="document.body.classList.toggle('dyslexia-mode')">Toggle Dyslexia Mode</button>
+      <button onclick="testVoiceInput()">Test Voice Input</button>
+    </div>
   </div>
 
   <script src="app.js"></script>
+  <script>
+    // Temporary test functions - remove in production
+    function testVoiceInput() {
+      alert("Voice input will be implemented in Phase 2");
+    }
+  </script>
 </body>
 </html>
