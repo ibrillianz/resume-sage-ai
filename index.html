@@ -1,69 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Sage AI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="neuro.css">
-  <meta name="description" content="AI-powered resume builder for neurodivergent professionals">
-</head>
-<body>
-  <div class="container">
-    <!-- Entry Section -->
-    <div id="entry-section">
-      <header>
-        <h1>Resume Sage AI</h1>
-        <p class="subtitle">Build resumes that work with your brain</p>
-      </header>
-      
-      <div class="neuro-prompt">
-        <h2>Select your preferred thinking style:</h2>
-        <div class="flow-options">
-          <button class="flow-btn" onclick="setFlow('structured')">
-            <span class="emoji">🏗️</span>
-            <span class="label">Structured Steps</span>
-          </button>
-          <button class="flow-btn" onclick="setFlow('exploration')">
-            <span class="emoji">🌱</span>
-            <span class="label">Open Exploration</span>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Form Section -->
-    <div id="free-tier-form" class="hidden">
-      <h2>Let's Build Your Resume</h2>
-      
-      <div class="form-group">
-        <label for="targetRole">Target Role:</label>
-        <input type="text" id="targetRole" placeholder="e.g. UX Designer" required>
-      </div>
-
-      <div id="questions-container"></div>
-
-      <button class="primary-btn" onclick="generateResume()">Generate Resume</button>
-    </div>
-
-    <!-- Output Section -->
-    <div id="resume-output" class="hidden">
-      <h2>Your AI-Generated Resume</h2>
-      <div id="resume-content" class="resume-preview"></div>
-      
-      <div class="action-buttons">
-        <button class="secondary-btn" onclick="window.print()">Print Resume</button>
-        <button class="primary-btn" onclick="startOver()">Start Over</button>
+<div class="container">
+  <div class="tier-badge tier-free">Free Tier</div>
+  
+  <!-- Entry Section -->
+  <div id="entry-section">
+    <h1>Resume Sage <span class="neuro-badge">Neuro-Inclusive</span></h1>
+    <div class="neuro-prompt">
+      <h2>How do you work best?</h2>
+      <div class="flow-options">
+        <button class="flow-btn" data-flow="structured">
+          <span class="emoji">🏗️</span>
+          <span class="label">Structured Steps</span>
+        </button>
+        <button class="flow-btn" data-flow="explorative">
+          <span class="emoji">🌱</span>
+          <span class="label">Open Exploration</span>
+        </button>
       </div>
     </div>
   </div>
 
-  <!-- Accessibility Tools -->
-  <div class="accessibility-tools">
-    <button class="accessibility-btn" onclick="toggleDyslexiaMode()" aria-label="Toggle dyslexia-friendly font">DF</button>
-    <button class="accessibility-btn" onclick="testVoiceInput()" aria-label="Voice input">🎤</button>
+  <!-- Form Section -->
+  <div id="form-section" class="hidden">
+    <!-- ... existing form ... -->
+    <div class="upsell-cta">
+      <p>Get <strong>3 tailored versions</strong> and <strong>full ATS analysis</strong> with Basic Tier</p>
+      <button class="upgrade-btn">Upgrade to Basic (₹499/mo)</button>
+    </div>
   </div>
 
-  <script src="app.js"></script>
-</body>
-</html>
+  <!-- Output Section -->
+  <div id="output-section" class="hidden">
+    <div class="neuro-score">
+      <h3>Neuro-Inclusivity Score</h3>
+      <div class="score-value">85%</div>
+      <p>Highly compatible with ADHD-friendly roles</p>
+    </div>
+    <!-- ... resume output ... -->
+  </div>
+</div>
