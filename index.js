@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { db } from './firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { useState } from 'react';
+import '../styles/neuro.css'; // Import neuro.css here 👈
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -30,7 +31,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-        <img src="/logo.svg" alt="MindCrafting Careers Logo" width="200" height="200" className="mb-6" />
+        <img src="/logo.svg" alt="MindCrafting Careers Logo" className="logo" />
 
         <h1 className="text-4xl font-bold text-blue-700">MindCrafting Careers</h1>
         <p className="mt-4 text-lg text-gray-600">"Your Mind. Your Career. Your Way."</p>
@@ -53,7 +54,7 @@ export default function Home() {
         </form>
 
         {success && (
-          <p className="mt-4 text-green-600">Thanks! We’ll notify you when we launch 🚀</p>
+          <p className="success-message mt-4">Thanks! We’ll notify you when we launch 🚀</p>
         )}
       </main>
     </div>
