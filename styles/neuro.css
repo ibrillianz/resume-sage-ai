@@ -63,3 +63,51 @@ button:hover {
   height: auto;
   margin-bottom: 1rem;
 }
+/* ====== Upload Modal ====== */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.6);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ====== Motivational Message Styling ====== */
+.motivational-message {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #e0f2fe;
+  color: #075985;
+  border-left: 5px solid #0284c7;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* ====== Resume Output Section ====== */
+.resume-text {
+  background: #f8fafc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  white-space: pre-wrap;
+}
