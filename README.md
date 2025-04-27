@@ -1,34 +1,43 @@
-# Resume Sage AI 🔒  
-**The Smarter Resume Builder**  
+# 🧠 MindCrafting Careers
 
-👉 [[Live Demo](https://resume-sage-ai.vercel.app)] *(Limited free tier)*  
-📞 *Contact for enterprise access*  
+"Your Mind. Your Career. Your Way."
 
----
-
-## ✨ What Users Experience  
-| Tier          | Key Benefit                          |
-|---------------|--------------------------------------|
-| **Free**      | 60-second resume draft               |
-| **Basic**     | Role-specific improvements           |
-| **Premium**   | Advanced career matching             |
-
-*"Saved me 3 hours of resume tweaking!"* – Early tester  
+🚀 A Neuro-Inclusive Career Platform built by iBrillianz.
 
 ---
 
-## 🛠️ Tech Stack (Surface-Level)  
-- **Frontend**: Next.js  
-- **Security**: GDPR-compliant data handling  
-- **AI**: Proprietary optimization engine  
+## About
+MindCrafting Careers helps diverse thinkers craft resumes and discover roles aligned to their strengths.
 
-⚠️ **IMPORTANT**  
-These files contain proprietary code:  
-- app.js  
-- generate.js  
 ---
 
-## 🚀 Quick Start  
+## Live Site
+https://mindcraftingcareers.ibrillianz.com
+
+---
+
+## Tech Stack
+- Next.js
+- TailwindCSS
+- Firebase (Auth + Firestore)
+- Razorpay (Payments)
+- Vercel (Hosting)
+
+---
+
+## Project Structure
+- `/pages` → Frontend
+- `/api` → Future backend APIs
+- `/public` → Logos, assets
+- `/styles` → Custom CSS
+- `/githooks` → Git automations (optional)
+
+---
+
+## Setup Instructions
+
+Clone the repo:
+
 ```bash
-# Clone repo (Personal/educational use only)
-git clone https://github.com/ibrillianz/repo
+git clone https://github.com/ibrillianz/mindcraftingcareers.git
+cd mindcraftingcareers
