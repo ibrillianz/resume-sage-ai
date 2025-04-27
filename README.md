@@ -1,19 +1,14 @@
 # 🧠 MindCrafting Careers
-
 "Your Mind. Your Career. Your Way."
-
 🚀 A Neuro-Inclusive Career Platform built by iBrillianz.
 
 ---
-
 ## About
 MindCrafting Careers helps diverse thinkers craft resumes and discover roles aligned to their strengths.
-
 ---
 
 ## Live Site
 https://mindcraftingcareers.ibrillianz.com
-
 ---
 
 ## Tech Stack
