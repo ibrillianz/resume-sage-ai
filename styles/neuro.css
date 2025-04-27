@@ -1,0 +1,65 @@
+/* styles/neuro.css */
+
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1F2937; /* Slate-900 */
+  line-height: 1.6;
+}
+
+/* Dyslexia Mode (for later toggle) */
+body.dyslexia-mode {
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+}
+
+/* Inputs and Buttons */
+input, button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+input:focus, button:focus {
+  outline: 3px solid #2563EB; /* Primary Blue */
+  outline-offset: 2px;
+}
+
+/* Submit Button Hover */
+button:hover {
+  background-color: #1E40AF; /* Deeper Blue hover */
+  transform: scale(1.02);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Success Message Micro-Reward (Pulsing + Gold Glow) */
+.success-message {
+  animation: pulseGlow 1.5s ease-in-out infinite alternate;
+  font-weight: bold;
+  color: #10B981; /* Emerald for positivity */
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 0px #F59E0B; /* Gold glow start */
+    transform: scale(1);
+  }
+  100% {
+    text-shadow: 0 0 10px #F59E0B; /* Gold glow pulse */
+    transform: scale(1.05);
+  }
+}
+
+/* Low Sensory Load Mode */
+.low-sensory-mode {
+  background-color: #F9FAFB; /* Light Gray */
+  color: #111827; /* Almost Black */
+}
+
+/* Logo Image Style (optional) */
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
