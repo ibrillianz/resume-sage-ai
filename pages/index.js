@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { db } from './firebase';
+import { db } from '../lib/firebase/config';
 import { collection, addDoc } from 'firebase/firestore';
 import { useState } from 'react';
 import '../styles/neuro.css'; // Import neuro.css here 👈
