@@ -1,3 +1,8 @@
+import OpenAI from 'openai';
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+});
 export default async (req, res) => {
   try {
     const { neuroFlow, answers, tier = 'free' } = req.body;
