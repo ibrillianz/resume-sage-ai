@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCraftingCareers | Neuro-Inclusive Resume Builder</title>
+  <link rel="stylesheet" href="/styles/neuro.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Tier Badge -->
+    <div class="tier-badge tier-free">Free Tier</div>
+
+    <!-- Upload CV Modal (hidden initially) -->
+    <div id="upload-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Upload Your Existing CV (Optional)</h2>
+        <input type="file" id="cv-upload" accept=".pdf,.doc,.docx,.txt">
+        <button id="skip-upload">Skip</button>
+      </div>
+    </div>
+
+    <!-- Entry Section -->
+    <div id="entry-section">
+      <h1>MindCraftingCareers <span class="neuro-badge">Neuro-Inclusive</span></h1>
+
+      <div class="neuro-prompt">
+        <h2>How are you feeling today?</h2>
+        <div class="mood-slider">
+          <button class="mood-btn" data-mood="low">🧠</button>
+          <button class="mood-btn" data-mood="neutral">🌱</button>
+          <button class="mood-btn" data-mood="high">🎉</button>
+        </div>
+      </div>
+
+      <div class="motivational-message" id="motivational-message"></div>
+
+      <div class="flow-options">
+        <h2>Choose Your Thinking Style:</h2>
+        <button class="flow-btn" data-flow="structured">🏗️ Structured Steps</button>
+        <button class="flow-btn" data-flow="explorative">🌱 Open Exploration</button>
+      </div>
+
+    </div>
+
+    <!-- Form Section -->
+    <div id="form-section" class="hidden">
+
+      <h2>Help us build your best resume!</h2>
+
+      <!-- Work Environment -->
+      <div class="form-group">
+        <label>Preferred Work Environment(s):</label><br>
+        <label><input type="checkbox" name="work-env" value="remote"> Remote</label>
+        <label><input type="checkbox" name="work-env" value="hybrid"> Hybrid</label>
+        <label><input type="checkbox" name="work-env" value="office"> In-Office</label>
+      </div>
+
+      <!-- Years of Experience -->
+      <div class="form-group">
+        <label>Years of Experience:</label>
+        <select id="years-experience">
+          <option value="">Select</option>
+          <option value="0-1">0-1 years</option>
+          <option value="2-3">2-3 years</option>
+          <option value="4-6">4-6 years</option>
+          <option value="7-10">7-10 years</option>
+          <option value="10+">10+ years</option>
+        </select>
+      </div>
+
+      <!-- Dynamic Questions will be loaded here -->
+      <div id="questions-container"></div>
+
+      <!-- Generate Resume Button -->
+      <button id="generate-btn">Generate My Resume</button>
+
+      <!-- Placeholder Upsell CTA (dummy) -->
+      <div class="upsell-cta hidden">
+        <p>Unlock Pro Features with Basic Tier Upgrade (Coming Soon)</p>
+        <button class="upgrade-btn">Upgrade (₹499)</button>
+      </div>
+
+    </div>
+
+    <!-- Output Section -->
+    <div id="output-section" class="hidden">
+      <h2>Your Neuro-Inclusive Resume</h2>
+
+      <div class="neuro-score">
+        <h3>Neuro-Inclusivity Score</h3>
+        <div class="score-value">--%</div>
+        <p class="score-feedback">Let's make your profile shine brighter!</p>
+      </div>
+
+      <div id="resume-output" class="resume-text">
+        <!-- Generated resume text will appear here -->
+      </div>
+
+      <button id="download-resume-btn">Download as .txt</button>
+
+    </div>
+
+  </div>
+
+  <script src="/index.js"></script>
+</body>
+</html>
