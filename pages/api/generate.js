@@ -54,3 +54,9 @@ function calculateNeuroScore(answers) {
   const matches = answers.join(' ').match(new RegExp(keywords.join('|'), 'gi'));
   return Math.min(100, (matches?.length || 0) * 20 + 40);
 }
+function generateStructuredResume(answers, features) {
+  return { type: 'structured', content: 'Structured Resume', features };
+}
+function generateExplorativeResume(answers, features) {
+  return { type: 'explorative', content: 'Explorative Resume', features };
+}
