@@ -13,3 +13,9 @@
     "firebase": "^9.0.0"
   }
 }
+{
+  "scripts": {
+    "preinstall": "rm -rf node_modules || true",
+    "install": "npm cache clean --force && npm install --force"
+  }
+}
