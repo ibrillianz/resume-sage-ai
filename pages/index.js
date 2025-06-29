@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { db } from '../lib/firebase/config';
 import { collection, addDoc } from 'firebase/firestore';
 import { useState } from 'react';
-import '../styles/neuro.css'; // Import neuro.css here 👈
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -54,7 +53,7 @@ export default function Home() {
         </form>
 
         {success && (
-          <p className="success-message mt-4">Thanks! We’ll notify you when we launch 🚀</p>
+          <p className="success-message mt-4">Thanks! We'll notify you when we launch 🚀</p>
         )}
       </main>
     </div>
