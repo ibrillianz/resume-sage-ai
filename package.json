@@ -1,8 +1,6 @@
 {
   "type": "module",
   "scripts": {
-    "preinstall": "rm -rf node_modules || true",
-    "install": "npm cache clean --force && npm install --force",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
