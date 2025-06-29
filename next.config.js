@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    serverActions: true
+  trailingSlash: true,
+  output: 'export',
+  distDir: 'out',
+  images: {
+    unoptimized: true
   }
 };
 
